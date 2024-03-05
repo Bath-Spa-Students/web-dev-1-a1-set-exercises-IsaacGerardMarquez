@@ -1,0 +1,1072 @@
+/* Sets the background color of the body to a color with the hex value #fddcc356. */
+body{background-color: #fddcc356;;}
+
+/* Navigation Bar */
+.header{
+    position: fixed; /* To fix the header at the top of the viewport. */
+    top: 0; left: 0; /* To position the header at the top-left corner of the viewport. */
+    width: 100%; /* I set the width to 100% to make the header span the entire width. */
+    padding: 20px 100px; /* I set the padding inside the header to have 20 pixels on the top and bottom and 100 pixels for both the left and right sides. */
+    background: #2f3d3c; /*I set the background color to a dark greenish color with the hex value #2f3d3c.*/
+    display: flex; /* To create a flexbox layout. */
+    justify-content: space-between; /* To align the items with space between them. */
+    align-items: center; /* To center the items vertically. */
+    z-index: 100; /* I set the stack order. */
+}
+
+.navbar a { /* This is used for the styling of the navigation links. */
+    position: relative; /* To position the anchor elements relative to their normal position within the document flow. */
+    font-size: 18px; /* I set the font-size to 18 pixels. */
+    color: white; /* I set the text color to white. */
+    font-weight: 500; /* I set the font weight to 500. */
+    text-decoration: none; /* I used this to remove the underlines from the anchor elements. */
+    margin-left: 40px; /* I added a left margin of 40 pixels to create space between the anchor elements. */
+}
+
+.navbar a::before{ /* This is used for styling the line below the navigation links. */
+    content: ''; /* For adding no content to the pseudo-element. */
+    position: absolute; /* I set the position to absolute to position the pseudo-element to the closest positioned ancestor. */
+    top: 100%; /* I set top to 100% to position below the anchor. */
+    left: 0; /* I set left to 0 to position at the left edge. */
+    width: 0; /* I set the width to 0 for the invisible line. */
+    height: 2px; /* I set the height of the line to 2 pixels. */
+    background: white; /* I set the background color of the line to white. */
+    transition: .3s; /* I used this for transition effect. */
+}
+
+.navbar a:hover::before { /* This is used for the styling of the line when hovered over the navigation links. */
+    width: 100%; /* The line expands to the full width on hover. */
+}
+
+/* I applied the CSS reset styles in order to remove the default padding and margins from all the elements. By doing so, I can set the box model or sizing to border-box. */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section{ /*I created this to style the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.container{ /*Used styles for a "container" inside each of the section.*/
+
+    /*I set the width of the container to be at 90% of its parent element.*/
+    width: 90%; 
+
+    /*I set the maximum width of the container to 100 pixels.*/
+    max-width: 100px; 
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+}
+.left1{ /*Styles for the "left1" section.*/
+
+    /*I set the width of the "left1" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "left1" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "left1" section to "Pancake.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/Pancake.jpg') no-repeat center / cover;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "left1" section.*/
+    border-radius: 8px;
+}
+
+.right1{ /*Styles for the "right1" section.*/
+
+    /*I set the width of the "right1" section to 50% of its container.*/
+    width: 50%; 
+
+    /*I set the minimum height of the "right1" section to 400 pixels.*/
+    min-height: 400px;
+
+    /*I set the background color of the box to a dark greenish color with the hex value #2f3d3c.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "right1" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "right1" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "right1" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "right1" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+
+
+/*I applied the CSS reset styles in order to remove the default padding and margins from all the elements. By doing so, I can set the box model or sizing to border-box.*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section { /*I created this to style the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.Ingredients { /*Used styles for "Ingredients" inside each of the section.*/
+
+    /*I set the width of the container to be at 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.left2 { /*Styles for the "left2" section.*/
+    
+    /*I set the width of the "left2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "left2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "left2" section to "Pancake2.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/Pancake2.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "left2" section.*/
+    border-radius: 8px;
+}
+
+.right2 { /*Styles for the "right2" section.*/
+
+    /*I set the width of the "right2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "right2" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "right2" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*At the center, I aligned the child elements vertically.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "right2" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "right2" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "right2" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "right2" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the "list-style-type property" to "disc".*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+.Method {
+    
+    /*I set the background color of the box to a dark greenish color with the hex value #2f3d3c.*/
+    background-color: #2f3d3c;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the box.*/
+    border-radius: 8px;
+
+    /*I set the text color to white. */
+    color: white;
+
+    /*I set the font size of the text inside the box to 24 pixels. */
+    font-size: 24px;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*I applied 5 pixels of padding around the text inside the box.*/
+    padding: 5px;
+}
+
+/*I applied the CSS reset styles in order to remove the default padding and margins from all the elements. By doing so, I can set the box model or sizing to border-box.*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section { /*I created this to style the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step1-1 { /*Used styles for a "step1-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step1-2 { /*Styles for the "step1-2" section.*/
+    /*I set the width of the "step1-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step1-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step1-2" section to "1.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/1.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step1-2" section.*/
+    border-radius: 8px;
+}
+
+.step1-3 { /*Styles for the "step1-3" section.*/
+
+    /*I set the width of the "step1-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "step1-3" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step1-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "step1-3" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step1-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step1-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step1-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+section { /*Used for the styles for the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step2-1 { /*Used styles for a "step2-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step2-2 { /*Styles for the "step2-2" section.*/
+    /*I set the width of the "step2-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step2-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step2-2" section to "2.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/2.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step2-2" section.*/
+    border-radius: 8px;
+}
+
+.step2-3 { /*Styles for the "step2-3" section.*/
+
+    /*I set the width of the "step2-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "step2-3" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step2-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "step2-3" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step2-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step2-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step2-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+section { /*Used for the styles for the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step3-1 { /*Used styles for a "step3-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step3-2 { /*Styles for the "step3-2" section.*/
+    /*I set the width of the "step3-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step3-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step3-2" section to "3.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/3.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step3-2" section.*/
+    border-radius: 8px;
+}
+
+.step3-3 { /*Styles for the "step3-3" section.*/
+
+    /*I set the width of the "step3-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "step3-3" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step3-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "step3-3" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step3-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step3-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step3-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+section { /*Used for the styles for the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step4-1 { /*Used styles for a "step4-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step4-2 { /*Styles for the "step4-2" section.*/
+    /*I set the width of the "step4-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step4-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step3-2" section to "4.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/4.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step4-2" section.*/
+    border-radius: 8px;
+}
+
+.step4-3 { /*Styles for the "step4-3" section.*/
+
+    /*I set the width of the "step4-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "step4-3" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step4-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "step4-3" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step4-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step4-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step4-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+section { /*Used for the styles for the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step5-1 { /*Used styles for a "step5-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step5-2 { /*Styles for the "step5-2" section.*/
+    /*I set the width of the "step5-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step5-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step5-2" section to "5.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/5.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step5-2" section.*/
+    border-radius: 8px;
+}
+
+.step5-3 { /*Styles for the "step5-3" section.*/
+
+    /*I set the width of the "step5-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "step5-3" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step5-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the "step5-3" section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step5-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step5-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step5-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+section { /*Used for the styles for the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step6-1 { /*Used styles for a "step6-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step6-2 { /*Styles for the "step6-2" section.*/
+    /*I set the width of the "step6-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step6-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step6-2" section to "6.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/6.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step6-2" section.*/
+    border-radius: 8px;
+}
+
+.step6-3 { /*Styles for the "step6-3" section.*/
+
+    /*I set the width of the "step6-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the "step6-3" section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step6-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*Applying 30 pixels of padding inside the "step6-3" section.*/
+    padding: 30px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step6-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step6-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step6-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
+
+section { /*Used for the styles for the section of the webpage.*/
+
+    /*I set the minimum height of each section to 100% of the viewport height so that each section will fill the screen vertically.*/
+    min-height: 100vh;
+
+    /*I set the width of each section to 100%.*/
+    width: 100%;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned the child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned the child elements horizontally at the center.*/
+    justify-content: center;
+}
+
+.step7-1 { /*Used styles for a "step7-1" inside each of the section.*/
+
+    /*I set the width of the container to 90% of its parent element.*/
+    width: 90%;
+
+    /*I set the maximum width of the container to 1000 pixels.*/
+    max-width: 1000px;
+
+    /*I set equal margins on both sides to center the container horizontally.*/
+    margin: 0 auto;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I aligned child elements vertically at the center.*/
+    align-items: center;
+
+    /*I aligned child elements horizontally at the center.*/
+    justify-content: center;
+
+    /*For spacing, I added a top margin of 50px.*/
+    margin-top: 50px;
+}
+
+.step7-2 { /*Styles for the "step7-2" section.*/
+    /*I set the width of the "step7-2" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the height of the "step7-2" section to 600 pixels.*/
+    height: 600px;
+
+    /*I set the background image of the "step7-2" section to "7.jpg". It is center positioned and covers the entire area.*/
+    background: url('Recipe Images/7.jpg') no-repeat center / cover; 
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step7-2" section.*/
+    border-radius: 8px;
+}
+
+.step7-3 { /*Styles for the "step7-3" section.*/
+
+    /*Sets the width of the "step7-3" section to 50% of its container.*/
+    width: 50%;
+
+    /*I set the minimum height of the right section to 400 pixels.*/
+    min-height: 400px;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c for the "step7-3" section.*/
+    background-color: #2f3d3c;
+
+    /*In order to position the child elements, I set the display to flex for a flexbox layout.*/
+    display: flex;
+
+    /*I used a flexbox layout for positioning child elements.*/
+    flex-direction: column; /* It can be adjusted to display contents in a column. */
+
+    /*At the center, I aligned the child elements vertically.*/
+    align-items: center;
+
+    /*At the center, I aligned the child elements horizontally.*/
+    justify-content: center;
+
+    /*I applied 50 pixels of padding inside the step7-3 section.*/
+    padding: 50px;
+
+    /*I set the border radius to 8 pixels to apply rounded corners to the "step7-3" section.*/
+    border-radius: 8px;
+
+    /*I set the text color to white.*/
+    color: white;
+
+    /*I moved the "step7-3" section to the left by 150 pixels.*/
+    margin-left: -150px;
+
+    /*For the text inside the "step7-3" section, I set the font size to 20 pixels.*/
+    font-size: 20px;
+}
+
+/* I centered the Elements horizontally using "text-align: center" and added 20 pixels of bottom margin. */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*To show the bullet points for each item from the list, I set the list-style-type property to disc.*/
+ul {
+    list-style-type: disc;
+    padding-left: 0; /*I used the padding-left: 0 to remove any default left padding. I did this to ensure the list starts flush with its container's left edge.*/
+}
+
+/*To create spacing between them vertically, I added 10 pixels of bottom margin to each list item.*/
+li {
+    margin-bottom: 10px;
+}
