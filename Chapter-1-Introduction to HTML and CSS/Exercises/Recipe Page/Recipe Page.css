@@ -1,3 +1,8 @@
+/*I used this to enable smooth scrolling and transitions for all the HTML elements I have used for my website.*/
+html {
+    scroll-behavior: smooth;
+}
+
 /* Sets the background color of the body to a color with the hex value #fddcc356. */
 body{background-color: #fddcc356;;}
 
