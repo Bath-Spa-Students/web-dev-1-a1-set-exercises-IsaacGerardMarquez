@@ -1075,3 +1075,17 @@ ul {
 li {
     margin-bottom: 10px;
 }
+
+.footer{
+    /*I set the text within the footer in the center by setting the text-align to center.*/
+    text-align: center;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c. */
+    background-color: #2f3d3c;
+    
+    /*Within the footer, I added 20 pixels of padding around the content.*/
+    padding: 20px;
+
+    /*I set the text color to white.*/
+    color: white;
+}
