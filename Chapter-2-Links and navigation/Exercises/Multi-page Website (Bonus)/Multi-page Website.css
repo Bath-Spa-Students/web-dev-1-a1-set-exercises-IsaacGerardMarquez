@@ -1,0 +1,829 @@
+/*I used this to enable smooth scrolling and transitions for all the HTML elements I have used for my website.*/
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body {
+    /*I set the margin to 0 to remove the default margin of the body.*/
+    margin: 0;
+
+    /*I set the padding to 0 to remove the default padding of the body.*/
+    padding: 0;
+
+    /*I set the background color of the body to a light beige color with the hex value #f9efe3.*/
+    background-color: #f9efe3;
+}
+
+.homepage-container {
+    /*I set the position to relative so that all positioned child elements will be positioned relative to its container.*/
+    position: relative;
+
+    /*I set the height of the container to 100% of the viewport height.*/
+    height: 100vh; /* Set container height */
+}
+
+.homepage {
+    /*I set the position to absolute to position the homepage element absolutely within "homepage-container".*/
+    position: absolute;
+
+    /*I set the top to 40% to position the top edge of the homepage element.*/
+    top: 40%;
+
+    /*I set the left to 50% to position the left edge of the homepage element.*/
+    left: 50%;
+
+    /*I set "transform" to "translate(-50%, -50%)" to center the homepage element horizontally and vertically.*/
+    transform: translate(-50%, -50%);
+
+    /*I set the text-align to center to center the text within the homepage element.*/
+    text-align: center;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+.homepage h1 {
+    /*I set the font-size of all <h1> elements within the "homepage h1" to 70 pixels.*/
+    font-size: 70px;
+
+    /*I set the top margin of all <h1> elements within the "homepage h1" to 20 pixels.*/
+    margin-top: 20px; 
+
+    /*I set the bottom margin of all <h1> elements within the "homepage h1" to 10 pixels.*/
+    margin-bottom: 10px;
+
+    /*I set the font-weight of all <h1> elements within the "homepage h1" to bold.*/
+    font-weight: bold;
+
+    /*I set the border-bottom to 2 pixels and solid to create a solid border line that is 2 pixels thick and has a color of light blue with the hex value #b6d7f4.*/
+    border-bottom: 2px solid #b6d7f4;
+
+    /*I set the bottom padding to 10 pixels.*/
+    padding-bottom: 10px;
+}
+
+.homepage p {
+    /*I set the top margin of all <p> elements within the "homepage p" to 10 pixels.*/
+    margin-top: 10px;
+
+    /*I set the bottom margin of all <p> elements within the "homepage p" to 20 pixels.*/
+    margin-bottom: 20px;
+}
+
+
+/* Button styles */
+.watch-now-button {
+    /*I created a padding for the button. (15 pixels for the top and bottom) (25 pixels for the left and right)*/
+    padding: 15px 25px;
+
+    /*I set a border-radius to 25 pixels to create rounded corners for the button.*/
+    border-radius: 25px;
+
+    /*I set the font-weight to bold to make the font of the button bold.*/
+    font-weight: bold;
+
+    /*I set a border to 2 pixels and solid to create a 2 pixels solid border for the button. It has a light blue color with a hex value of #b6d7f4.*/
+    border: 2px solid #b6d7f4;
+
+    /*I set the background to transparent to make the button's background transparent.*/
+    background: transparent;
+
+    /*I set the color of the text to a dark beige color with the hex value #7155447.*/
+    color: #715447;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+
+    /*I set the position of the button to relative.*/
+    position: relative;
+
+    /*I set the overflow to hidden to hide any context that overflows the button.*/
+    overflow: hidden;
+
+    /*I set the text-decoration to none to remove the default underline.*/
+    text-decoration: none;
+
+    /*I set the top to 30 pixels to move the button down by 30 pixels from its original position.*/
+    top: 30px;
+}
+
+.watch-now-button span {
+    /*I set the background color of the span to a light blue color with the hex value #b6d7f4.*/
+    background: #b6d7f4;
+
+    /*I set the height of the span to 100% of its container.*/
+    height: 100%;
+
+    /*I set the width of the span to 0% of its container.*/
+    width: 0%;
+
+    /*I used a border-radius and set it to 25 pixels to create round corners.*/
+    border-radius: 25px;
+
+    /*I set the position to absolute.*/
+    position: absolute;
+
+    /*I set the left to 0 to align the span to the left edge of the container.*/
+    left: 0;
+
+    /*I set the bottom to 0 to align the span to the bottom edge of the container.*/
+    bottom: 0;
+
+    /*I set the z-index of the span to -1 to place it behind the button content.*/
+    z-index: -1;
+
+    /*I used transition and set width 0.5s to create a transition effect over 0.5 seconds.*/
+    transition: width 0.5s;
+}
+
+.watch-now-button:hover span {
+    /*I used width and set it to 100% so that when the user hovers over the button, it expands.*/
+    width: 100%;
+}
+
+.watch-now-button:hover {
+    /*I set the border to none to remove the border of the button when the user hovers over it.*/
+    border: none;
+}
+
+/* Navigation bar styles */
+nav {
+    /*I set the background color of the navigation bar to a light blue color with the hex value #b6d7f4.*/
+    background-color: #b6d7f4;
+
+    /*I set the width of the navigation bar to 100%.*/
+    width: 100%;
+
+    /*I added 35 pixels of padding for both the top and bottom of the navigation bar. I also set 0 to not create any padding on both the left and right sides. */
+    padding: 35px 0;
+
+    /*I set the display to flex to create a flexible layout for the navigation bar.*/
+    display: flex;
+
+    /*I set the align items to center to center all the items in the navigation bar.*/
+    align-items: center;
+
+    /*I set the justify content to center to center all the items horizontally in the navigation bar.*/
+    justify-content: center;
+
+    /*I set the z-index of the navigation bar to 1 to ensure that it is above other elements. */
+    z-index: 1;
+
+    /*I set the position to fixed to fixed the position of the navigation bar.*/
+    position: fixed;
+
+    /*I set the top to 0 to make sure that the navigation bar would be positioned at the top of the viewport.*/
+    top: 0;
+
+    /*I set the left to 0 to make sure that the navigation bar would be positioned at the left of the viewport.*/
+    left: 0;
+}
+
+nav ul {
+    /*I set the list-style to none to remove all the bullet points or default list styles from the list.*/
+    list-style: none;
+
+    /*I set the margin to 0 to remove default margin from the list.*/
+    margin: 0;
+
+    /*I set the padding to 0 to remove default padding from the list.*/
+    padding: 0;
+
+    /*I set the display to flex to create a flexible layout.*/
+    display: flex;
+}
+
+nav ul li {
+    /*I used this to add a margin for both the left and right side of each list item.*/
+    margin: 0 20px;
+
+    /*I set the position to relative.*/
+    position: relative;
+}
+
+nav ul li a {
+    /*I set the text-decoration to none to remove the underline from the anchor links.*/
+    text-decoration: none;
+
+    /*I set the color of the text to a dark beige color with the hext color #715447.*/
+    color: #715447;
+
+    /*I set the text-transform to uppercase to make the text of anchor links to uppercase.*/
+    text-transform: uppercase;
+
+    /*I set the z-index of the navigation links to 1 to ensure that it is above other elements. */
+    z-index: 1; 
+}
+
+nav ul li::after {
+    /*To add content.*/
+    content: '';
+
+    /*I set the height of the line to 3 pixels.*/
+    height: 3px;
+
+    /*I set its initial width to 0%.*/
+    width: 0%;
+
+    /*I set the background color of the line to a dark brown color with the hext color #631700.*/
+    background: #631700;
+
+    /*I set the position to absolute.*/
+    position: absolute;
+
+    /*I set left to 0 to position it to the left.*/
+    left: 0;
+    
+    /*I set the bottom to -10 pixels to place the line below the list item.*/
+    bottom: -10px;
+
+    /*I created a transition effect for the width change that is over 0.5 seconds.*/
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    /*I used so that when the user hovers, it expands the width of the line to 100%*/
+    width: 100%;
+}
+
+
+.about-container {
+    /*I set the position of the container to relative to its normal position in the document flow.*/
+    position: relative;
+
+    /*I set the height of the container to 100% of the viewport height to ensure that it occupies and spans the full height of the viewport.*/
+    height: 100vh;
+}
+
+.about {
+    /*I set the position to absolute to position the content within ".about-container.*/
+    position: absolute;
+
+    /*I set top to 40% to position the content by 40% from the top of its containing element.*/
+    top: 40%;
+
+    /*I set left to 50% to position the content by 50% from the left of its containing element.*/
+    left: 50%;
+
+    /*I set "transform" to "translate(-50%, -50%)" to center the content horizontally and vertically.*/
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+
+    /*I set the text align to center to align the text in the center.*/
+    text-align: center;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+.about h2 {
+    /*I set the font size of the "h2" element to 70 pixels.*/
+    font-size: 70px;
+    
+    /*I set the margin top to 20 pixels to add 20 pixels top margin for the "h2" element.*/
+    margin-top: 20px;
+
+    /*I set the margin bottom to 10 pixels to add 10 pixels bottom margin for the "h2" element.*/
+    margin-bottom: 10px; /* Adjust the bottom margin */
+
+    /*I set the font-weight of the "h2" element to bold.*/
+    font-weight: bold;
+
+    /*I set the border-bottom to 2 pixels and solid to create a bottom border to the "h2" element with a thickness of 2 pixels and a solid style, and a light blue color with the hex value #b6d7f4.*/
+    border-bottom: 2px solid #b6d7f4;
+
+    /*I set the padding-bottom to 10 pixels to add 10 pixels of padding at the bottom of the "h2" element.*/
+    padding-bottom: 10px;
+}
+
+.about p {
+    /*I set the margin-top to 10 pixels to set 10 pixels of top margin of the "p" element.*/
+    margin-top: 10px;
+
+    /*I set the margin-bottom to 20 pixels to set 20 pixels of bottom margin of the "p" element.*/
+    margin-bottom: 20px;
+}
+
+
+.plot-container {
+    /*I set the position of the container to relative to its normal position in the document flow.*/
+    position: relative;
+
+    /*I set the height of the container to 100% of the viewport height to ensure that it occupies and spans the full height of the viewport.*/
+    height: 100vh;
+}
+
+.plot {
+    /*I set the position to absolute to position the content within ".plot-container.*/
+    position: absolute;
+
+    /*I set top to 40% to position the content by 40% from the top of its containing element.*/
+    top: 40%;
+
+    /*I set left to 50% to position the content by 50% from the left of its containing element.*/
+    left: 50%;
+
+    /*I set "transform" to "translate(-50%, -50%)" to center the content horizontally and vertically.*/
+    transform: translate(-50%, -50%); 
+    
+    /*I set the text align to center to align the text in the center.*/
+    text-align: center;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+.plot h2 {
+    /*I set the font size of the "h2" element to 70 pixels.*/
+    font-size: 70px;
+
+    /*I set the margin top to 20 pixels to add 20 pixels top margin for the "h2" element.*/
+    margin-top: 20px; 
+
+    /*I set the margin bottom to 10 pixels to add 10 pixels bottom margin for the "h2" element.*/
+    margin-bottom: 10px; 
+
+    /*I set the font-weight of the "h2" element to bold.*/
+    font-weight: bold;
+
+    /*I set the border-bottom to 2 pixels and solid to create a bottom border to the "h2" element with a thickness of 2 pixels and a solid style, and a light blue color with the hex value #b6d7f4.*/
+    border-bottom: 2px solid #b6d7f4; 
+
+    /*I set the padding-bottom to 10 pixels to add 10 pixels of padding at the bottom of the "h2" element.*/
+    padding-bottom: 10px; 
+}
+
+.plot p {
+    /*I set the margin-top to 10 pixels to set 10 pixels of top margin of the "p" element.*/
+    margin-top: 10px; 
+
+    /*I set the margin-bottom to 20 pixels to set 20 pixels of bottom margin of the "p" element.*/
+    margin-bottom: 20px;
+}
+
+
+.intro-character-container {
+    /*I set the position of the container to relative to its normal position in the document flow.*/
+    position: relative;
+
+    /*I set the height of the container to 100% of the viewport height to ensure that it occupies and spans the full height of the viewport.*/
+    height: 100vh;
+}
+
+.characters {
+    /*I set the position to absolute to position the content within "intro-character-container.*/
+    position: absolute;
+
+    /*I set top to 40% to position the content by 40% from the top of its containing element.*/
+    top: 40%;
+
+    /*I set left to 50% to position the content by 50% from the left of its containing element.*/
+    left: 50%;
+
+    /*I set "transform" to "translate(-50%, -50%)" to center the content horizontally and vertically.*/
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+
+    /*I set the text align to center to align the text in the center.*/
+    text-align: center;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+.characters h2 {
+    /*I set the font size of the "h2" element to 70 pixels.*/
+    font-size: 70px;
+
+    /*I set the margin top to 20 pixels to add 20 pixels top margin for the "h2" element.*/
+    margin-top: 20px;
+
+    /*I set the margin bottom to 10 pixels to add 10 pixels bottom margin for the "h2" element.*/
+    margin-bottom: 10px;
+
+    /*I set the font-weight of the "h2" element to bold.*/
+    font-weight: bold;
+
+    /*I set the border-bottom to 2 pixels and solid to create a bottom border to the "h2" element with a thickness of 2 pixels and a solid style, and a light blue color with the hex value #b6d7f4.*/
+    border-bottom: 2px solid #b6d7f4; 
+
+    /*I set the padding-bottom to 10 pixels to add 10 pixels of padding at the bottom of the "h2" element.*/
+    padding-bottom: 10px; 
+}
+
+.characters p {
+    /*I set the margin-top to 10 pixels to set 10 pixels of top margin of the "p" element.*/
+    margin-top: 10px; 
+
+    /*I set the margin-bottom to 20 pixels to set 20 pixels of bottom margin of the "p" element.*/
+    margin-bottom: 20px;
+}
+
+.character-container {
+    /*I set the display to flex to create a flexbox layout.*/
+    display: flex;
+
+    /*I set the justify content to center to center the flex items horizontally within the container.*/
+    justify-content: center;
+
+    /*I set the flex-wrap to wrap to allow the flex items to wrap onto multiple lines.*/
+    flex-wrap: wrap;
+}
+
+.character-box {
+    /*I set the width of the character box to 325 pixels.*/
+    width: 325px;
+
+    /*I set the minimum height of the character box to 400 pixels.*/
+    min-height: 400px;
+
+    /*I set the background color of the character box to a light blue with the hex value #b6d7f4.*/
+    background-color: #b6d7f4;
+
+    /*I set the border-radius to 8 pixels to round the corners of the character box by 8 pixels.*/
+    border-radius: 8px;
+
+    /*I set the overflow to hidden to hide any content that overflows the character box.*/
+    overflow: hidden;
+
+    /* I set the box-shadow to 0px 2px 4px rgba(0, 0, 0, 0.2) to add a box shadow to the character box.*/
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    /*To provide spaces between the boxes, I set a margin around each character box to 20 pixels.*/
+    margin: 20px;
+}
+
+.character-box-content {
+    /*I added 200 pixels of padding at the top, 20 pixels of padding for both its left and right sides, and 20 pixels of padding at the bottom.*/
+    padding: 200px 20px 20px;
+
+    /*I set the display to flex to create a flex container for the content area.*/
+    display: flex;
+
+    /*I set the flex-direction to column to set the direction of the flex container vertically.*/
+    flex-direction: column;
+
+    /*I set the justify-content to flex start to align the flex items vertically and position them at the start of the container.*/
+    justify-content: flex-start;
+
+    /*To occupy the entire height of the character box, I set the height of the content area to 100%.*/
+    height: 100%;
+}
+
+.character-box-content h3 {
+    /*I set the color of the text of the "h3" element to a dark beige color with the hex value #715447.*/
+    color: #715447;
+
+    /*I set the font-size of the "h3" element to 28 pixels.*/
+    font-size: 28px;
+
+    /*I set the margin to 0 to remove the default margin.*/
+    margin: 0; 
+
+    /*I set the border-top to 1 pixel and solid style to create a solid border at the top of the "h3" element with a thickness of 1 pixel and a light blue color with the hex value #715447.*/
+    border-top: 1px solid #715447;
+    
+    /*To add spacing, I set the padding-top to 10 pixels for the "h3" element.*/
+    padding-top: 10px;
+}
+
+.character-box-content p {
+    /*I set the color of the text of the "p" element to a dark beige color with the hex value #715447.*/
+    color: #715447;
+
+    /*I set the font-size of the "p" element to 15 pixels.*/
+    font-size: 15px;
+
+    /*I set the line-height to 1.3 to set the line height of the p element by 1.3 times the font size.*/
+    line-height: 1.3;
+
+    /*To create spaces between the elements, I set the top margin of the p element to 8 pixels.*/
+    margin-top: 8px;
+}
+
+
+.intro-cast-container {
+    /*I set the position of the container to relative to its normal position in the document flow.*/
+    position: relative;
+
+    /*I set the height of the container to 100% of the viewport height to ensure that it occupies and spans the full height of the viewport.*/
+    height: 100vh;
+}
+
+.cast {
+    /*I set the position to absolute to position the content within "intro-cast-container.*/
+    position: absolute; 
+
+    /*I set top to 40% to position the content by 40% from the top of its containing element.*/
+    top: 40%;
+
+    /*I set left to 50% to position the content by 50% from the left of its containing element.*/
+    left: 50%;
+
+    /*I set "transform" to "translate(-50%, -50%)" to center the content horizontally and vertically.*/
+    transform: translate(-50%, -50%);
+
+    /*I set the text align to center to align the text in the center.*/
+    text-align: center;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+.cast h2 {
+    /*I set the font size of the "h2" element to 70 pixels.*/
+    font-size: 70px;
+
+    /*I set the margin top to 20 pixels to add 20 pixels top margin for the "h2" element.*/
+    margin-top: 20px;
+
+    /*I set the margin bottom to 10 pixels to add 10 pixels bottom margin for the "h2" element.*/
+    margin-bottom: 10px; 
+
+    /*I set the font-weight of the "h2" element to bold.*/
+    font-weight: bold; 
+
+    /*I set the border-bottom to 2 pixels and solid to create a bottom border to the "h2" element with a thickness of 2 pixels and a solid style, and a light blue color with the hex value #b6d7f4.*/
+    border-bottom: 2px solid #b6d7f4; 
+
+    /*I set the padding-bottom to 10 pixels to add 10 pixels of padding at the bottom of the "h2" element.*/
+    padding-bottom: 10px;
+}
+
+.cast p {
+    /*I set the margin-top to 10 pixels to set 10 pixels of top margin of the "p" element.*/
+    margin-top: 10px;
+
+    /*I set the margin-bottom to 20 pixels to set 20 pixels of bottom margin of the "p" element.*/
+    margin-bottom: 20px; 
+}
+
+.cast-container {
+    /*I set the display to flex to create a flexbox layout.*/
+    display: flex;
+
+    /*I set the justify content to center to center the flex items horizontally within the container.*/
+    justify-content: center;
+
+    /*I set the flex-wrap to wrap to allow the flex items to wrap onto multiple lines.*/
+    flex-wrap: wrap;
+}
+
+.cast-box {
+    /*I set the width of the cast box to 325 pixels.*/
+    width: 325px;
+
+    /*I set the minimum height of the cast box to 400 pixels.*/
+    min-height: 400px;
+
+    /*I set the background color of the cast box to a light blue with the hex value #b6d7f4.*/
+    background-color: #b6d7f4;
+
+    /*I set the border-radius to 8 pixels to round the corners of the cast box by 8 pixels.*/
+    border-radius: 8px;
+
+    /*I set the overflow to hidden to hide any content that overflows the cast box.*/
+    overflow: hidden;
+
+    /* I set the box-shadow to 0px 2px 4px rgba(0, 0, 0, 0.2) to add a box shadow to the cast box.*/
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+    /*To provide spaces between the boxes, I set a margin around each cast box to 20 pixels.*/
+    margin: 20px;
+}
+
+.cast-box-content {
+    /*I added 200 pixels of padding at the top, 20 pixels of padding for both its left and right sides, and 20 pixels of padding at the bottom.*/
+    padding: 200px 20px 20px;
+
+    /*I set the display to flex to create a flex container for the content area.*/
+    display: flex;
+
+    /*I set the flex-direction to column to set the direction of the flex container vertically.*/
+    flex-direction: column;
+
+    /*I set the justify-content to flex start to align the flex items vertically and position them at the start of the container.*/
+    justify-content: flex-start;
+
+    /*To occupy the entire height of the cast box, I set the height of the content area to 100%.*/
+    height: 100%;
+}
+
+.cast-box-content h3 {
+    /*I set the color of the text of the "h3" element to a dark beige color with the hex value #715447.*/
+    color: #715447;
+
+    /*I set the font-size of the "h3" element to 28 pixels.*/
+    font-size: 28px;
+
+    /*I set the margin to 0 to remove the default margin.*/
+    margin: 0; 
+    
+    /*I set the border-top to 1 pixel and solid style to create a solid border at the top of the "h3" element with a thickness of 1 pixel and a light blue color with the hex value #715447.*/
+    border-top: 1px solid #715447; 
+    
+    /*To add spacing, I set the padding-top to 10 pixels for the "h3" element.*/
+    padding-top: 10px; 
+}
+
+.cast-box-content p {
+    /*I set the color of the text of the "p" element to a dark beige color with the hex value #715447.*/
+    color: #715447;
+
+    /*I set the font-size of the "p" element to 15 pixels.*/
+    font-size: 15px;
+
+    /*I set the line-height to 1.3 to set the line height of the p element by 1.3 times the font size.*/
+    line-height: 1.3;
+
+    /*To create spaces between the elements, I set the top margin of the p element to 8 pixels.*/
+    margin-top: 8px;
+}
+
+
+.intro-review-container {
+    /*I set the position of the container to relative to its normal position in the document flow.*/
+    position: relative;
+
+    /*I set the height of the container to 100% of the viewport height to ensure that it occupies and spans the full height of the viewport.*/
+    height: 100vh;
+}
+
+.reviews {
+    /*I set the position to absolute to position the content within "intro-review-container.*/
+    position: absolute; 
+
+    /*I set top to 40% to position the content by 40% from the top of its containing element.*/
+    top: 40%; 
+
+    /*I set left to 50% to position the content by 50% from the left of its containing element.*/
+    left: 50%; 
+
+    /*I set "transform" to "translate(-50%, -50%)" to center the content horizontally and vertically.*/
+    transform: translate(-50%, -50%); 
+
+    /*I set the text align to center to align the text in the center.*/
+    text-align: center;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447; 
+}
+
+.reviews h2 {
+    /*I set the font size of the "h2" element to 70 pixels.*/
+    font-size: 70px; 
+
+    /*I set the margin top to 20 pixels to add 20 pixels top margin for the "h2" element.*/
+    margin-top: 20px; 
+
+    /*I set the margin bottom to 10 pixels to add 10 pixels bottom margin for the "h2" element.*/
+    margin-bottom: 10px;
+
+    /*I set the font-weight of the "h2" element to bold.*/
+    font-weight: bold; 
+
+    /*I set the border-bottom to 2 pixels and solid to create a bottom border to the "h2" element with a thickness of 2 pixels and a solid style, and a light blue color with the hex value #b6d7f4.*/
+    border-bottom: 2px solid #b6d7f4; 
+
+    /*I set the padding-bottom to 10 pixels to add 10 pixels of padding at the bottom of the "h2" element.*/
+    padding-bottom: 10px; 
+}
+
+.reviews p {
+    /*I set the margin-top to 10 pixels to set 10 pixels of top margin of the "p" element.*/
+    margin-top: 10px; 
+
+    /*I set the margin-bottom to 20 pixels to set 20 pixels of bottom margin of the "p" element.*/
+    margin-bottom: 20px; 
+}
+
+
+.review-button-body{
+    /*I set the display to flex to create a flexbox layout.*/
+    display: flex;
+
+    /*I set the justify-content to center to center elements within the container.*/
+    justify-content: center;
+
+    /*I set the align-items to center to align the elements within the container at the center vertically.*/
+    align-items: center;
+
+    /*I set the height of the container to 100% of the viewport height.*/
+    height: 100vh;
+
+    /*I set the width of the container to 100% of the viewport width.*/
+    width: 100vw;
+}
+.review-button {
+    /*I set the margin to 0 and -15px to remove the horizontal margins and set a negative margin of 15 pixels for both of the sides.*/
+    margin: 0 -15px;
+
+    /*I set the width of the review button to 900 pixels.*/
+    width: 900px;
+}
+
+.review-column {
+    /*I set the width of the column to be 33.33% of the container's width.*/
+    width: 33.33%;
+
+    /*I created a horizontal padding and set it by 15 pixels for each column.*/
+    padding: 0 15px;
+
+    /*I set it the columns to float to the left to align them in a row.*/
+    float: left;
+
+    /*It is the padding and border in the total width and height of the columns.*/
+    box-sizing: border-box;
+}
+
+.review-box {
+    /*I added a transition effect that would last for 0.5 seconds.*/
+    transition: .5s;
+}
+
+.review-box:hover {
+    /*I added a box shadow effect to the review box when the user hovers over it.*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.review-information {
+    /*I set the max-height to 0 pixels to hide it.*/
+    max-height: 0px;
+
+    /*I set a transition effect to change both the maximum height and padding.*/
+    transition: max-height 0.5s linear, padding 0.5s linear;
+
+    /*I set the overflow to hidden to hide any content that exceeds the maximum height.*/
+    overflow: hidden;
+}
+
+.review-box:hover .review-information {
+    /*To reveal the content, I set the maximum height to 400 pixels when the user hovers over it.*/
+    max-height: 400px;
+
+    /*When hovered, I added 25 pixels of padding.*/
+    padding: 25px;
+}
+
+.review-information-inner {
+    /*I set the padding to 0 to remove the padding from the inner content.*/
+    padding: 0;
+
+    /*I set the background color of the inner content to a light beige color with the hex value #f9efe3.*/
+    background: #f9efe3;
+
+    /*I added a transition effect to change the inner content's padding.*/
+    transition: padding 0.5s linear; 
+}  
+
+.review-information h4 {
+    /*I set the font-size of all <h4> elements within the "review-information h4" to 20 pixels.*/
+    font-size: 20px;
+
+    /*I set the bottom margin of all <h4> elements within the "review-information h4" to 10 pixels.*/
+    margin-bottom: 10px;
+
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+.review-information p {
+    /*I set the color of the text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+}
+
+button {
+    /*I set the font-weight to bold to make the button text to bold.*/
+    font-weight: bold;
+
+    /*I set the color of the button text to a dark beige color with the hex value #715447.*/
+    color: #715447;
+
+    /*I set the width of the button to 100% of its container.*/
+    width: 100%;
+
+    /*I created 15 pixels of padding for the button.*/
+    padding: 15px;
+
+    /*I set the border to none to remove the border of the button.*/
+    border: none;
+
+    /*I set the background color of the button to a light blue color with the hex value #b6d7f4.*/
+    background: #b6d7f4;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+
+    /*I set the font size of the button text to 15 pixels.*/
+    font-size: 15px;
+}
+
+.footer{
+    /*I set the text within the footer in the center by setting the text-align to center.*/
+    text-align: center;
+
+    /*I set the background color of the footer to a light blue color with the hex calue #b6d7f4.*/
+    background-color: #b6d7f4;
+
+    /*Within the footer, I added 20 pixels of padding around the content.*/
+    padding: 20px;
+}
