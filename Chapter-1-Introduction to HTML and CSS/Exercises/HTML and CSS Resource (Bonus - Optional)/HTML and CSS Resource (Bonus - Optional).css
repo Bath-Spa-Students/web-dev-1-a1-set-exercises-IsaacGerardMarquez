@@ -1,0 +1,106 @@
+/*I used this to enable smooth scrolling and transitions for all the HTML elements I have used for my website.*/
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sets the background color of the body to a color with the hex value #fddcc356. */
+body{background-color: #fddcc356;
+padding-top: 60px;}
+
+/* Navigation Bar */
+.header{
+    position: fixed; /* To fix the header at the top of the viewport. */
+    top: 0; left: 0; /* To position the header at the top-left corner of the viewport. */
+    width: 100%; /* I set the width to 100% to make the header span the entire width. */
+    padding: 10px 100px; /* I set the padding inside the header to have 20 pixels on the top and bottom and 100 pixels for both the left and right sides. */
+    background: #2f3d3c; /*I set the background color to a dark greenish color with the hex value #2f3d3c.*/
+    display: flex; /* To create a flexbox layout. */
+    justify-content: space-between; /* To align the items with space between them. */
+    align-items: center; /* To center the items vertically. */
+    z-index: 100; /* I set the stack order. */
+}
+
+.navbar a { /* This is used for the styling of the navigation links. */
+    position: relative; /* To position the anchor elements relative to their normal position within the document flow. */
+    font-size: 18px; /* I set the font-size to 18 pixels. */
+    color: white; /* I set the text color to white. */
+    font-weight: 500; /* I set the font weight to 500. */
+    text-decoration: none; /* I used this to remove the underlines from the anchor elements. */
+    margin-left: 40px; /* I added a left margin of 40 pixels to create space between the anchor elements. */
+}
+
+.navbar a::before{ /* This is used for styling the line below the navigation links. */
+    content: ''; /* For adding no content to the pseudo-element. */
+    position: absolute; /* I set the position to absolute to position the pseudo-element to the closest positioned ancestor. */
+    top: 100%; /* I set top to 100% to position below the anchor. */
+    left: 0; /* I set left to 0 to position at the left edge. */
+    width: 0; /* I set the width to 0 for the invisible line. */
+    height: 2px; /* I set the height of the line to 2 pixels. */
+    background: white; /* I set the background color of the line to white. */
+    transition: .3s; /* I used this for transition effect. */
+}
+
+.navbar a:hover::before { /* This is used for the styling of the line when hovered over the navigation links. */
+    width: 100%; /* The line expands to the full width on hover. */
+}
+
+.RESOURCE-GUIDE{
+    /*I set the color of the text to a dark greenish color with the hex value #2f3d3c.*/
+    color: #2f3d3c;
+}
+
+#HTML{
+    /*I set the color of the text to a dark greenish color with the hex value #2f3d3c.*/
+    color: #2f3d3c;
+}
+
+#HTML-Tags{
+    /*I set the color of the text to a dark greenish color with the hex value #2f3d3c.*/
+    color: #2f3d3c;
+}
+
+#HTML-Tags pre{
+    /*I set the border style to have 1 pixel, be solid, and have a dark greenish color with the hex value #2f3d3c.*/
+    border: 1px solid #2f3d3c;
+
+    /*I added 10 pixels of padding inside the box*/
+    padding: 10px;
+
+    /*I added 20 pixels of margin outside the box.*/
+    margin: 20px;
+}
+
+#CSS{
+    /*I set the color of the text to a dark greenish color with the hex value #2f3d3c.*/
+    color: #2f3d3c;
+}
+
+#CSS-Properties{
+    /*I set the color of the text to a dark greenish color with the hex value #2f3d3c.*/
+    color: #2f3d3c;
+}
+
+#CSS-Properties pre{
+    /*I set the border style to have 1 pixel, be solid, and have a dark greenish color with the hex value #2f3d3c.*/
+    border: 1px solid #2f3d3c; /* Border style */
+
+    /*I added 10 pixels of padding inside the box*/
+    padding: 10px;
+
+    /*I added 20 pixels of margin outside the box.*/
+    margin: 20px;
+}
+
+.footer{
+    /*I set the text within the footer in the center by setting the text-align to center.*/
+    text-align: center;
+
+    /* I set the background color to a dark greenish color with the hex value #2f3d3c. */
+    background-color: #2f3d3c;
+    
+    /*Within the footer, I added 20 pixels of padding around the content.*/
+    padding: 20px;
+
+    /*I set the text color to white.*/
+    color: white;
+}
