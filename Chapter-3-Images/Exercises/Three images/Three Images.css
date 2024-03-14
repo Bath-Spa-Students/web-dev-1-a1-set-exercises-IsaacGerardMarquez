@@ -1,0 +1,92 @@
+body{
+    /*I set the font family for the body of the page as Georgia, 'Times New Roman', Times, serif.*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    /*I set the background color of the body to a light blue color that has the hex value #D7E6E9.*/
+    background-color: #D7E6E9;
+}
+
+h1{
+    /*I set the text-align to center to center the text within the h1 tag.*/
+    text-align: center;
+
+    /*I set the color of the text within the h1 tag to an orange color that has the hex value #EEA559.*/
+    color: #EEA559;
+}
+
+figcaption{
+    /*I set the text-align to center to center the text within the figcaption element.*/
+    text-align: center;
+
+    /*For spacing, I added a top margin of 15 pixels. */
+    margin-top: 15px;
+}
+
+.image-1 img{
+    /*I set the display to block to set the image to be a block element.*/
+    display: block;
+
+    /*I set the margin-left and margin-right to auto to center the image horizontally.*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*I set the width of the image to 70% of the parent container. */
+    width: 70%;
+
+    /*I set the height to auto to retain the image's aspect ratio.*/
+    height: auto;
+
+    /*I added an orange color (hex value: #EEA559) drop shadow filter or effect to the image. (30 pixels of offset horizontally) (10 pixels of offset vertically) (4 pixels of blur)  */
+    filter: drop-shadow(30px 10px 4px #EEA559);
+  }
+
+.image-2 img{
+    /*I set the display to block to set the image to be a block element.*/
+    display: block;
+
+    /*I set the margin-left and margin-right to auto to center the image horizontally.*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*I set the width of the image to 70% of the parent container. */
+    width: 70%;
+
+    /*I set the height to auto to retain the image's aspect ratio.*/
+    height: auto;
+
+    /*I added an orange color (hex value: #EEA559) drop shadow filter or effect to the image. (30 pixels of offset horizontally) (10 pixels of offset vertically) (4 pixels of blur)  */
+    filter: drop-shadow(30px 10px 4px #EEA559);
+}
+
+.image-3 img{
+    /*I set the display to block to set the image to be a block element.*/
+    display: block;
+
+    /*I set the margin-left and margin-right to auto to center the image horizontally.*/
+    margin-left: auto;
+    margin-right: auto;
+
+    /*I set the width of the image to 70% of the parent container. */
+    width: 70%;
+
+    /*I set the height to auto to retain the image's aspect ratio.*/
+    height: auto;
+
+    /*I added an orange color (hex value: #EEA559) drop shadow filter or effect to the image. (30 pixels of offset horizontally) (10 pixels of offset vertically) (4 pixels of blur)  */
+    filter: drop-shadow(30px 10px 4px #EEA559);
+}
+  
+.image-1 img:hover {
+    /*When the user hovers over the image (image-1), the sepia filter will be applied to it. */
+    filter: sepia();
+}
+
+.image-2 img:hover {
+    /*When the user hovers over the image (image-2), the invert filter will be applied to it. */
+    filter: invert();
+}  
+
+.image-3 img:hover {
+    /*When the user hovers over the image (image-3), the grayscale filter will be applied to it. */
+    filter:grayscale();
+}
