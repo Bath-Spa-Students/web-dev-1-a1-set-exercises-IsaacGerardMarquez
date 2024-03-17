@@ -1,0 +1,40 @@
+/* For styling elements within "boxA". */
+.boxA {
+    /* I set a border to a 5-pixel and solid violet color with the RGBA values (138,42,227,255). */
+    border: 5px solid rgba(138,42,227,255);
+
+    /* I set a box-shadow to apply a red box shadow. */
+    box-shadow: 10px 10px 10px red;
+}
+
+/* For styling elements within "boxB". */
+.boxB {
+    /* I set a border to a 5-pixel and solid bright green color with the RGBA values (0,255,1,255). */
+    border: 5px solid rgba(0,255,1,255);
+
+    /* I set a box-shadow to apply an inset box shadow. */
+    box-shadow: 10px 10px 10px black inset;
+}
+
+/* For styling elements within "boxC". */
+.boxC {
+    /* I set a border to a 5-pixel and solid orange color with the RGBA values (255,139,0,255). */
+    border: 5px solid rgba(255,139,0,255);
+
+    /* I set a border-radius to 25 pixels to round the corners with the radius of 25 pixels. */
+    border-radius: 25px;
+
+    /* I used a box-shadow and set it to different rgba values to create multiple box shadows that has different colors. */
+    box-shadow: 0px 0px 0px 10px rgba(0,0,254,255),
+                0px 0px 0px 20px rgba(254,0,0,255), 
+                0px 0px 0px 30px rgba(0,128,1,255);
+}
+
+/* For styling elements within "boxD". */
+.boxD {
+    /* I set a border to a 5-pixel and solid dark red color with the RGBA values (178,34,34,255). */
+    border: 5px solid rgba(178,34,34,255);
+
+    /* I set a text-shadow to add a shadow or text-shadow to the text. */
+    text-shadow: 5px 5px 1px;
+}
