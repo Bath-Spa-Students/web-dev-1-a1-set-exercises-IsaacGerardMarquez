@@ -1,0 +1,38 @@
+/* For styling all the "div" elements. */
+div {
+    /* I set the display to inline block so that the elements would be displayed as inline blocks. */
+    display: inline-block;
+
+    /* I set the font-family to sans serif to use sans-serif as the font for the texts.*/
+    font-family: sans-serif;
+
+    /* I set the font size to 20 pixels. */
+    font-size: 20px;
+
+    /* I added 25 pixels of margin around the elements. */
+    margin: 25px;
+
+    /* I added a solid 4 pixels black border to all sides. */
+    border: 4px solid black;
+
+    /* I set the line-height to 100 pixels. */
+    line-height: 100px;
+
+    /* I set the text-align of the texts to the center. */
+    text-align: center;
+
+    /* I set the width to 200 pixels. */
+    width: 200px;
+
+    /* I set the height to 200 pixels. */
+    height: 200px;
+}
+
+/* For styling all the "body" elements. */
+body {
+    /* I set both the top and bottom margin to 100 pixels. By doing so, it gets automatically centered. */
+    margin: 100px auto;
+
+    /* I set the width to max-content to set the maximum width of the elements. */
+    width: max-content;
+}
