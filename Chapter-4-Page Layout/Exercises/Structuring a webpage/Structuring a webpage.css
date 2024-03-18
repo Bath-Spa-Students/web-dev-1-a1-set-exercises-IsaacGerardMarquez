@@ -1,0 +1,208 @@
+body {
+    /* As per the requirement, I set the body font to "Arial" and the font-size to "400". */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400
+}
+
+/* Logo and Heading */
+header {
+    /* As per the requirement, I set the background-color of the header to #17072b. */
+    background-color: #17072b;
+
+    /* I set a 10 pixel padding around the content. */
+    padding: 10px;
+}
+
+header h1 {
+    /* As per the requirement, I set the body font to "Tahoma". */
+    font-family: Tahoma;
+
+    /* I set the color of the text to white or #FFFFFF. */
+    color: #FFFFFF;
+
+    /* I set the font size of the "h1" 60 pixels. */
+    font-size: 60px;
+
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I set an underline to the text. */
+    text-decoration: underline;
+
+    /* I set the offset for the underline to 7 pixels. */
+    text-underline-offset: 7px;
+
+    /* I added a 25 pixel top margin. */
+    margin-top: 25px;
+
+    /* I added a 30 pixel bottom margin. */
+    margin-bottom: 30px;
+}
+
+
+/* The Navigation Menu */
+nav {
+    /* As per the requirement, I set the background-color of the Navigation Menu to #17072b. */
+    background-color: #17072b;
+
+    /* I set the font-size of the text to 30 pixels. */
+    font-size: 30px;
+
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I set the word-spacing to 25 pixels to add spaces between the words. */
+    word-spacing: 25px;
+
+    /* I added 25 pixels of padding to the bottom. */
+    padding-bottom: 25px;
+}
+nav a {
+    /* I set the text-decoration to none to remove the underline. */
+    text-decoration: none;
+
+    /* I set the color of the text to white or #FFFFFF. */
+    color: #FFFFFF;
+}
+
+.Whats-On-Spacing {
+    /* For the words "What's On", I set a word-spacing to 0 pixels to remove spacing between. */
+    word-spacing: 0px;
+}
+
+
+/* The main "Welcome" content */
+main {
+    /* I set the display to flex so that the main content would be displayed as a flex container. */
+    display: flex;
+}
+
+section {
+    /* I added 20 pixels of margin for both the left and right sides. */
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /* I added 10 pixels of padding around the content. */
+    padding: 10px;
+}
+
+section h2 {
+    /* I set the text color to black or #000000. */
+    color: #000000;
+
+    /* I set the font size of the "h2" to 28 pixels. */
+    font-size: 28px;
+    
+    /* I set the font to Tahoma. */
+    font-family: Tahoma;
+
+    /* I set an underline to the text. */
+    text-decoration: underline;
+
+    /* I set the offset for the underline to 5 pixels. */
+    text-underline-offset: 5px;
+
+    /* I added a 15 pixel top margin. */
+    margin-top: 15px;
+
+    /* I added a 25 pixel bottom margin. */
+    margin-bottom: 25px;
+}
+
+section p {
+    /* I set the font-size of the paragraph (p) to 20 pixels. */
+    font-size: 20px;
+}
+
+section img {
+    /* I set the height of the image to 350 pixels, while also keeping its original width. This is done to retain the image's aspect ratio. */
+    height: 350px;
+    width: 100%;
+}
+
+
+/* The "Line Up" content */
+aside {
+    /* I added 20 pixels of padding around the content. */
+    padding: 20px;
+
+    /* I added a 15 pixel top margin. */
+    margin-top: 15px;
+
+    /* As per the requirement, I set the background color of the side bar to #172d67. */
+    background-color: #172d67;
+
+    /* I set the text color to white or #FFFFFF. */
+    color: #FFFFFF;
+
+    /* I set the height of the aside element to 491 pixels. */
+    height: 491px;
+}
+
+aside h2 {
+    /* I set the font-size of "h2" to 28 pixels. */
+    font-size: 28px;
+
+    /* I set the font to Tahoma. */
+    font-family: Tahoma;
+
+    /* I set an underline to the text. */
+    text-decoration: underline;
+
+    /* I set the offset for the underline to 6 pixels. */
+    text-underline-offset: 6px;
+
+    /* I added a 5 pixel top margin. */
+    margin-top: 5px;
+
+    /* I added a 5 pixel left margin. */
+    margin-left: 5px;
+}
+
+ul {
+    /* I set the font size of the list items to 20 pixels. */ 
+    font-size: 20px;
+
+    /* To change the unordered list's list-style-type from bullet points to dashes (-). */
+    list-style-type: "- ";
+
+    /* I added 20 pixels of padding to the left of all the list items. */
+    padding-left: 20px;
+}
+
+/* The two square images underneath the text. */
+.Two-images {
+    /* So that the elements would be displayed as a grid. */
+    display: grid;
+
+    /* To create two columns of equal width. */
+    grid-template-columns: 1fr 1fr;
+
+    /* To add 12 pixexls of gap between the columns. */
+    column-gap: 12px;
+
+    /* To add 5 pixels of margin to the left. */
+    margin-left: 5px;
+}
+
+
+/* Footer */
+footer {
+    /* As per the requirement, I set the background-color of the footer to #8c15e9. */
+    background-color: #8c15e9;
+
+    /* I set the color of the text to white or #FFFFFF. */
+    color: #FFFFFF;
+
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I set the font size to 20 pixels. */
+    font-size: 20px;
+
+    /* I added a 15 pixel top margin. */
+    margin-top: 15px;
+
+    /* I added 8 pixels of padding around the content. */
+    padding: 8px;
+}
