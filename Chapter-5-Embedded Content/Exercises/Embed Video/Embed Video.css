@@ -1,0 +1,52 @@
+body, html {
+    /* I set the background to have a linear gradient. This gradient starts from a beige color (#CFB997) at the top to a gray color (#7F7F7F) at the bottom. */
+    background: linear-gradient(to bottom, #CFB997, #7F7F7F);
+
+    /* I set the height of the body to 100% so that it would fill the entire viewport. */
+    height: 100%;
+
+    /* I set the margin to 0 to remove the default margin. */
+    margin: 0;
+}
+
+.Embed-Video {
+    /* I set the display to flex. */
+    display: flex;
+
+    /* I set the flex-direction to column. */
+    flex-direction: column;
+
+    /* I set the justify-content to center the content vertically. */
+    justify-content: center;
+
+    /* I center-aligned all the elements within the flex-container. */
+    align-items: center;
+
+    /* I set the height of the container to 100%. */
+    height: 100%;
+}
+
+video {
+    /* I set the width of the video to 100% so that it would fill the entire space. */
+    width: 100%;
+
+    /* I set the height to auto to retain the video's aspect ratio. */
+    height: auto; 
+    
+    /* I set the maximum width of the video to 1000 pixels. */
+    max-width: 1000px;
+
+    /* I set the maximum height of the video to 800 pixels. */
+    max-height: 800px;
+}
+
+footer {
+    /* I set the color of the text to black. */
+    color: #000000;
+
+    /* I set the font size of the text to 20 pixels. */
+    font-size: 20px;
+
+    /* I added 15 pixels of margin at the top of the footer. */
+    margin-top: 15px;
+}
