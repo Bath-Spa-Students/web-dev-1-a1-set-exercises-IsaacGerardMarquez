@@ -1,0 +1,70 @@
+body { 
+    /* I set the background to have a linear gradient. This gradient starts from a light blue color (#98c9cb) at the top to a darker blue color (#195284) at the bottom. */
+    background: linear-gradient(to bottom, #98c9cb, #195284);
+
+    /* I added 200 pixels of top margin. */
+    margin-top: 200px;
+
+    /* I set the minimum height of the body to 75% of the viewport height. */
+    min-height: 75vh;
+
+    /* I set the text-align to center to align all the elements within the body in the center. */
+    text-align: center;
+}
+
+h1 {
+    /* I set the color of the h1 text to white. */
+    color: white;
+
+    /* I set the h1 text's size to 70px. */
+    font-size: 70px;
+
+    /* I made the h1 text to bold. */
+    font-weight: bold;
+}
+
+.Soundboard-button {
+    /* I set the color of the buttons to a bright beige color. */
+    background-color: rgb(210, 177, 128);
+
+    /* I set the color of the text inside the button to black. */
+    color: black;
+
+    /* I set the size of the texts in the button to 16px. */
+    font-size: 16px;
+
+    /* I made the text in the button to bold. */
+    font-weight: bold;
+
+    /*I set a border-radius to 5 pixels to create rounded corners for the button. */
+    border-radius: 5px;
+
+    /*I set the border to none to remove the border of the button when the user hovers over it. */
+    border: none;
+
+    /* I set the margin to 16 pixels. */
+    margin: 16px;
+
+    /* I set 28 pixels of padding for both the top and bottom. I also added 56 pixels of padding for the left and right side. */
+    padding: 28px 56px;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+}
+
+.Soundboard-button:hover {
+    /* When the user hovers over the button, the button's color would change into an almost orange color (rgb(175, 114, 22)). */
+    background-color: rgb(175, 114, 22);
+
+    /* When the user hovers over the button, a box-shadow effect would take place on the button. */
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.06. */
+    transform: scale(1.06);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 2 pixels. */
+    letter-spacing: 2px;
+}
