@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Petrol Calculator.css">
+    <title>Petrol Calculator</title>
+</head>
+<body>
+
+    <!-- I created a div class named "Title" to contain the title of my Petrol Calculator so that I can style it in an external stylesheet. -->
+    <div class="Title">
+    <h1>Isaac's Petrol Calculator</h1>   
+</div>
+
+    <!-- Petrol Calculator -->
+    <div class="Isaac-Petrol-Calculator">
+
+    <!-- An input field for the user to enter the cost of petrol per liter. -->
+        <div class="User-Input-Field">
+            <label for="PetrolCost">The cost of Petrol per liter is:</label>
+            <input id="PetrolCost" type="number" step="0.01" value="1.72"> <!-- It would have a default value of 1.72. -->
+        </div>
+
+    <!-- An input field for the user to enter the number of liters purchased. -->
+        <div class="User-Input-Field">
+            <label for="PetrolLiterPurchased">The number of Liters you have purchased is:</label>
+            <input id="PetrolLiterPurchased" type="number" step="0.01" value="0"> <!-- It would have a default value of 0. -->
+        </div>
+
+    <!-- I created a button that the user can click to calculate the total cost of petrol they have purchased. -->
+        <button id="Calculator-Button">Calculate the Total Cost</button>
+        
+        <!-- The calculated total cost of petrol purchased by the user is displayed using a p tag. -->
+        <p id="CalculatedTotalCost">The total cost of petrol you have purchased is: <span id="PetrolTotalCost">0</span></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>Copyright &copy; 2024 Petrol Calculator | Made by: Isaac Gerard S. Marquez</footer>
+
+<!-- I used the script tag to link the JavaScript file named "Petrol Calculator.js", which contains the functionality of my petrol calculator. -->
+<script src="Petrol Calculator.js"></script>
+
+</body>
+</html>
