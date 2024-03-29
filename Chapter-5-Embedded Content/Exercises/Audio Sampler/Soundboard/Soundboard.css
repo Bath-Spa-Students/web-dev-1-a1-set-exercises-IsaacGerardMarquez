@@ -68,3 +68,11 @@ h1 {
     /* When the user hovers over the button, the texts would be spaced by 2 pixels. */
     letter-spacing: 2px;
 }
+
+footer {
+    /* I set the color of the text to antiquewhite. */
+    color: antiquewhite;
+
+    /* I added 200 pixels of top margin. */
+    margin-top: 200px;
+}
