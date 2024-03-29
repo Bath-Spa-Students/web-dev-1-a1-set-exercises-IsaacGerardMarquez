@@ -817,7 +817,10 @@ button {
     font-size: 15px;
 }
 
-.footer{
+footer{
+    /* I set the color of the text to a shade of brown that has the hex color value #715447. */
+    color: #715447;
+
     /*I set the text within the footer in the center by setting the text-align to center.*/
     text-align: center;
 
