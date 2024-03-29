@@ -1,0 +1,163 @@
+body {
+    /* I used an image (which is "khamkeo-vilaysing-d5PYB17O9jE-unsplash.jpg") as a background for the webpage. */
+    background-image: url("khamkeo-vilaysing-d5PYB17O9jE-unsplash.jpg");
+
+    /* I set the background-size to cover to make sure that the image covers the entire viewport. */
+    background-size: cover;
+
+    /* I set the background-position to center to center align the background image horizontally and vertically. */
+    background-position: center;
+
+    /* I set the display to flex to use a flexbox to control the webpage's layout. */
+    display: flex;
+
+    /* I set the flex-direction to column to vertically arrange the flex items. */
+    flex-direction: column;
+
+    /* I set the justify-content to vertically align the flex items at the center. */
+    justify-content: center;
+
+    /* I set the align-items to flex-end to horizontally align the flex items to the right. */
+    align-items: flex-end;
+
+    /* I set the height of the body to 100% of the viewport height. */
+    height: 100vh;
+
+    /* I set the margin to 0 to remove the default margin. */
+    margin: 0;
+}
+
+/* Title */
+.Title {
+    /* I set the text's size to 25 pixels. */
+    font-size: 25px;
+
+    /* I set the text's color to a shade of whitish yellow that has the rgb value rgb(245, 245, 220). */
+    color: rgb(245, 245, 220);
+
+    /* I added 55 pixels of right margin for the title. */
+    margin-right: 55px;
+
+    /* I added 120 pixels of top margin for the title. */
+    margin-top: 120px;
+}
+
+/* Petrol Calculator */
+.Isaac-Petrol-Calculator {
+    /* I set the color of the text to a shade of bright red that has the hex color value #ee0e0e. */
+    color: #ee0e0e;
+
+    /* I set the Petrol Calculator's background color to a shade of whitish yellow that has the rgb value rgb(245, 245, 220). */
+    background-color: rgb(245, 245, 220);
+
+    /* I added 20 pixels of padding on all sides of the Petrol Calculator. */
+    padding: 20px;
+
+    /* I set the border-radius of the Petrol Calculator to 5 pixels to round its corners. */
+    border-radius: 5px;
+
+    /* I set the Petrol Calculator's width to 500 pixels. */
+    width: 500px;
+
+    /* I added 50 pixels of right margin to the Petrol Calculator. */
+    margin-right: 50px;
+}
+
+.Isaac-Petrol-Calculator:hover {
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.02. */
+    transform: scale(1.02);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+}
+
+.User-Input-Field {
+    /* I added 15 pixels of bottom margin for the input field. */
+    margin-bottom: 15px;
+}
+
+label {
+    /* I set the display to block so that label would start in a new line. */
+    display: block;
+
+    /* I added 5 pixels of bottom margin. */
+    margin-bottom: 5px;
+}
+
+input {
+    /* I set the input's width to 55% of its container. */
+    width: 55%;
+
+    /* I added 8 pixels of padding on all sides of the input. */
+    padding: 8px;
+
+    /* I set the border to none to remove the input's default border. */
+    border: none;
+
+    /* I set the border-radius of the input to 5 pixels to round its corners. */
+    border-radius: 5px;
+}
+
+/* Petrol Calculator Button */
+button {
+    /* I set the Petrol Calculator button's background color to a shade of light red that has the hex color value #ec4444. */
+    background-color: #ec4444;
+
+    /* I set the color of the button's text to a shade of whitish yellow that has the rgb value rgb(245, 245, 220). */
+    color: rgb(245, 245, 220);
+
+    /* I set the border to none to remove the button's default border. */
+    border: none;
+
+    /* I added 10 pixels of padding for the top and bottom. Then 20 pixels of padding for the left and right side. */
+    padding: 10px 20px;
+
+    /* I set the border-radius of the button to 5 pixels to round its corners. */
+    border-radius: 5px;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+}
+
+button:hover {
+    /* I set the Petrol Calculator button's background color to a shade of bright red that has the hex color value #ee0e0e when hovered. */
+    background-color: #ee0e0e;
+
+    /* When the user hovers over the button, a box-shadow effect would take place on the button. */
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.02. */
+    transform: scale(1.02);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 1.5 pixels. */
+    letter-spacing: 1.5px;
+}
+
+#CalculatedTotalCost {
+    /* I set the text's size to 18 pixels and made it bold. */
+    font-size: 18px;
+    font-weight: bold;
+
+    /* I added 15 pixels of top margin. */
+    margin-top: 15px;
+}
+
+#PetrolTotalCost {
+    /* I set the color of the text to black. */
+    color: black;
+}
+
+/* Footer */
+footer {
+    /* I set the color of the footer's text to a shade of whitish yellow that has the rgb value rgb(245, 245, 220). */
+    color: rgb(245, 245, 220);
+
+    /* I added 250 pixels of top margin. */
+    margin-top: 250px;
+
+    /* I added 55 pixels of right margin. */
+    margin-right: 55px;
+}
