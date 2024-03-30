@@ -1,0 +1,302 @@
+body { 
+    /* I set the background to have a linear gradient. This gradient starts from a light blue color (#98c9cb) at the top to a darker blue color (#195284) at the bottom. */
+    background: linear-gradient(to bottom, #98c9cb, #195284);
+
+    /* I added 115 pixels of top margin. */
+    margin-top: 115px;
+
+    /* I set the minimum height of the body to 75% of the viewport height. */
+    min-height: 75vh;
+
+    /* I set the text-align to center to align all the elements within the body in the center. */
+    text-align: center;
+}
+
+h1 {
+    /* I set the color of the h1 text to white. */
+    color: white;
+
+    /* I set the h1 text's size to 70px. */
+    font-size: 70px;
+
+    /* I made the h1 text to bold. */
+    font-weight: bold;
+}
+
+.Soundboard-button {
+    /* I set the color of the buttons to a bright beige color. */
+    background-color: rgb(210, 177, 128);
+
+    /* I set the color of the text inside the button to black. */
+    color: black;
+
+    /* I set the size of the texts in the button to 16px. */
+    font-size: 16px;
+
+    /* I made the text in the button to bold. */
+    font-weight: bold;
+
+    /*I set a border-radius to 5 pixels to create rounded corners for the button. */
+    border-radius: 5px;
+
+    /*I set the border to none to remove the border of the button. */
+    border: none;
+
+    /* I set the margin to 16 pixels. */
+    margin: 16px;
+
+    /* I set 28 pixels of padding for both the top and bottom. I also added 56 pixels of padding for the left and right side. */
+    padding: 28px 56px;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+}
+
+.Soundboard-button:hover {
+    /* When the user hovers over the button, the button's color would change into an almost orange color (rgb(175, 114, 22)). */
+    background-color: rgb(175, 114, 22);
+
+    /* When the user hovers over the button, a box-shadow effect would take place on the button. */
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.06. */
+    transform: scale(1.06);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 2 pixels. */
+    letter-spacing: 2px;
+}
+
+
+/* Arrow Buttons */
+#Arrow-Button {
+    /* I added 20 pixels of top margin to the arrow buttons for spacing. */
+    margin-top: 20px;
+}
+
+/* Right Arrow Button */
+#Right-Arrow-Button {
+    /* I set the color of the button to a bright beige color. */
+    background-color: rgb(210, 177, 128);
+
+    /* I set the color of the text inside the button to black. */
+    color: black;
+
+    /* I set the size of the texts in the button to 16px. */
+    font-size: 16px;
+
+    /* I made the text in the button to bold. */
+    font-weight: bold;
+
+    /*I set a border-radius to 5 pixels to create rounded corners for the button. */
+    border-radius: 5px;
+
+    /*I set the border to none to remove the border of the button when the user hovers over it. */
+    border: none;
+
+    /* I set the margin to 16 pixels. */
+    margin: 16px;
+
+    /* I added 10 pixels of padding on all sides. */
+    padding: 10px;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+}
+
+#Right-Arrow-Button:hover {
+    /* When the user hovers over the button, the button's color would change into an almost orange color (rgb(175, 114, 22)). */
+    background-color: rgb(175, 114, 22);
+
+    /* When the user hovers over the button, a box-shadow effect would take place on the button. */
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.06. */
+    transform: scale(1.06);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 2 pixels. */
+    letter-spacing: 2px;
+}
+
+#Right-Arrow-Button a{
+    /* I set the text's color to black. */
+    color: black; 
+
+    /* I also set the text-decoration to none to remove the underline. */
+    text-decoration: none;
+}
+
+/* Left Arrow Button */
+#Left-Arrow-Button {
+    /* I set the color of the button to a bright beige color. */
+    background-color: rgb(210, 177, 128);
+
+    /* I set the color of the text inside the button to black. */
+    color: black;
+
+    /* I set the size of the texts in the button to 16px. */
+    font-size: 16px;
+
+    /* I made the text in the button to bold. */
+    font-weight: bold;
+
+    /*I set a border-radius to 5 pixels to create rounded corners for the button. */
+    border-radius: 5px;
+
+    /*I set the border to none to remove the border of the button. */
+    border: none;
+
+    /* I set the margin to 16 pixels. */
+    margin: 16px;
+
+    /* I added 10 pixels of padding on all sides. */
+    padding: 10px;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+}
+
+#Left-Arrow-Button:hover {
+    /* When the user hovers over the button, the button's color would change into an almost orange color (rgb(175, 114, 22)). */
+    background-color: rgb(175, 114, 22);
+
+    /* When the user hovers over the button, a box-shadow effect would take place on the button. */
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.06. */
+    transform: scale(1.06);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 2 pixels. */
+    letter-spacing: 2px;
+}
+
+#Left-Arrow-Button a{
+    /* I set the text's color to black. */
+    color: black; 
+
+    /* I also set the text-decoration to none to remove the underline. */
+    text-decoration: none;
+}
+
+
+/* Text to Speech Input Field */
+.Soundboard-Left input[type="text"],
+.Soundboard-Left button {
+    /* To make the corners of the input field rounded by 5 pixels. */
+    border-radius: 5px;
+
+    /* I set the border to none to remove the default border. */
+    border: none;
+
+    /* I added 100 pixels of top margin for spacing. */
+    margin-top: 100px;
+
+    /* I added 15 pixels of bottom margin for spacing. */
+    margin-bottom: 15px;
+
+    /* I also added 100 pixels of padding on all sides. */
+    padding: 100px;
+
+    /* I added 20 pixels of left margin. */ 
+    margin-left: 20px;
+
+}
+
+.Soundboard-Left button {
+    /* I set the color of the button to a bright beige color. */
+    background-color: rgb(210, 177, 128);
+
+    /* I set the text's color to black. */
+    color: black;
+
+    /* I set the size of the text in the button to 16px. */
+    font-size: 16px;
+
+    /* I made the text in the button to bold. */
+    font-weight: bold;
+
+    /*I set a border-radius to 5 pixels to create rounded corners for the button. */
+    border-radius: 5px;
+
+    /*I set the border to none to remove the border of the button. */
+    border: none;
+
+    /* I set 10 pixels of padding for both the top and bottom. I also added 20 pixels of padding for the left and right side. */
+    padding: 10px 20px;
+
+    /* I added 10 pixels of top margin for spacing. */
+    margin-top: 10px;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+    
+}
+
+.Soundboard-Left button:hover {
+    /* When the user hovers over the button, the button's color would change into an almost orange color (rgb(175, 114, 22)). */
+    background-color: rgb(175, 114, 22);
+
+    /* When the user hovers over the button, a box-shadow effect would take place on the button. */
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.06. */
+    transform: scale(1.06);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 2 pixels. */
+    letter-spacing: 2px;
+}
+
+
+/* Footer */
+footer {
+    /* I set the color of the text to antiquewhite. */
+    color: antiquewhite;
+
+    /* I added 180 pixels of top margin. */
+    margin-top: 180px;
+}
+
+/* Left and Right side of the Soundboard */
+.Soundboard-Container {
+    /* I set the container to have a flexbox layout. */
+    display: flex;
+
+    /* To align the items horizontally. */
+    justify-content: space-between;
+
+    /* To align the items vertically. */
+    align-items: flex-start;
+}
+
+.Soundboard-Left {
+    /* I set the width of the left side to 30% of its container. */
+    width: 30%;
+
+    /* This is to align the text in the center. */
+    text-align: left;
+
+    /* I added 20 pixels of left margin. */
+    margin-left: 20px;
+}
+
+.Soundboard-Right {
+    /* I set the width of the left side to 65% of its container. */
+    width: 65%;
+
+    /* This is to align the text in the center. */
+    text-align: center;
+
+    /* I added 20 pixels of right margin. */
+    margin-right: 20px;
+}
