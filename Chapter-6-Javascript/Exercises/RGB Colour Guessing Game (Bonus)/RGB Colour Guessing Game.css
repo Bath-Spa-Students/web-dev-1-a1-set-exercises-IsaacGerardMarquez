@@ -1,0 +1,185 @@
+body {
+    /* I used an image (which is "Confetti\ Background.jpg") as a background for the webpage. */
+    background-image: url(Confetti\ Background.jpg);
+
+    /* I set the background-size to cover to make sure that the image covers the entire viewport. */
+    background-size: cover;
+
+    /* I set the background-position to center to center align the background image horizontally and vertically. */
+    background-position: center;
+
+    /* I set the height of the body to 100% of the viewport height. */
+    height: 100vh;
+}
+ 
+/* The container for the hexagons. */
+#hexagonColouredboxcontainer {
+    /* I set the container width to 50% of parent and then centered it horizontally. */
+    width: 50%;
+    margin: 0 auto;    
+}
+ 
+/* To style the hexagons. */
+.hexagonColouredbox {
+    /* I set the hexagons' height and width to 200 pixels. */
+    height: 200px;
+    width: 200px;
+
+    /* I set the align-items to the center to vertically center the hexagons. */
+    align-items: center;
+
+    /* I set float to left to align the hexagons horizontally. */
+    float: left;
+
+    /* I added 15 pixels of margin. */
+    margin: 15px;
+
+    /* I used the clip-path to create a hexagon. */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+/* To style the hexagons when the user hovers over them. */
+.hexagonColouredbox:hover {
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.5. */
+    transform: scale(1.5);
+
+    /* When the user hovers over the button, a transition effect occurs that spans .8s. */
+    transition: 0.8s;
+}
+ 
+/* To style the h1 (which is the Game's title). */
+h1 {
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I added 10 pixels of bottom margin for the h1 element. */
+    margin-bottom: 10px;
+
+    /* I set the text's color to a bright blue color that has the rgb values (0, 223, 216). */
+    color: rgb(0, 223, 216);
+
+    /* I added a text-shadow effect to improve readability since the background image has so many colours. */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+h2 {
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I set the text's color to a bright yellow color that has the rgb value (250, 246, 0) and made them bold. */
+    color:rgb(250, 246, 0);
+    font-weight: bold;
+
+    /* I added a text-shadow effect to improve readability since the background image has so many colours. */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    /* I added 10 pixels of bottom margin. */
+    margin-bottom: 10px;
+}
+
+/* To style the difficulty level buttons. */
+#RGB-BUTTON {
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I added 10 pixels of bottom margin. */
+    margin-bottom: 10px;
+}
+
+button {
+    /* I added 10 pixels of padding for the top and bottom. I also added 20 pixels of padding for the left and right side. */
+    padding: 10px 20px;
+
+    /* I set the button text's size to 16 pixels. */
+    font-size: 16px;
+
+    /* I set the text's color to a brown color that has the rgb values (100, 48, 0). */
+    color: rgb(100, 48, 0);
+
+    /* I set the buttons' background color to a bright orange color that has the rgb values (250, 121, 0). */
+    background-color: rgb(250, 121, 0);
+
+    /* To remove the default border. */
+    border: none;
+
+    /* I added 5 pixels of margin. */
+    margin: 5px;
+
+    /* I set the border-radius of the button to 5 pixels to round its corners. */
+    border-radius: 5px;
+
+    /* I made the text bold. */
+    font-weight: bold;
+
+    /*I set the cursor to pointer so that when the cursor hovers over the button, it changes into a pointer.*/
+    cursor: pointer;
+}
+
+/* To style the buttons when the user hovers over them. */
+button:hover {
+    /* I set the text's background color to a bright yellow color that has the rgb value (250, 246, 0) when hovered. */
+    background-color: rgb(250, 246, 0);
+
+    /* When the user hovers over the button, the button would be scaled by a factor of 1.02. */
+    transform: scale(1.02);
+    
+    /* When the user hovers over the button, a transition effect occurs that spans .3s. */
+    transition: .3s;
+
+    /* When the user hovers over the button, the texts would be spaced by 1.5 pixels. */
+    letter-spacing: 1.5px;
+}
+
+/* To style the message box. */
+#boxColourmessage {
+    /* I set the display to block to show the elements as block-level elements. */
+    display: block;
+
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I set the text's size to 28 pixels. */
+    font-size: 28px;
+
+    /* I set the text's color to a bright orange color that has the rgb values (250, 121, 0). */
+    color: rgb(250, 121, 0);
+
+    /* I added a text-shadow effect to improve readability since the background image has so many colours. */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+    /* I added 10 pixels of bottom margin. */
+    margin-bottom: 10px;
+}
+
+/* To style the message showing the player's lives. */
+#lives {
+    /* I set the display to block to show the elements as block-level elements. */
+    display: block;
+
+    /* I center-aligned the text. */
+    text-align: center;
+
+    /* I added 10 pixels of bottom margin. */
+    margin-bottom: 10px;
+
+    /* I set the text's size to 28 pixels. */
+    font-size: 28px;
+
+    /* I set the text's color to a bright blue color that has the rgb values (0, 223, 216). */
+    color: rgb(0, 223, 216);
+
+    /* I added a text-shadow effect to improve readability since the background image has so many colours. */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+/* To style the message showing the player's remaining lives. */
+#playerLives {
+    /* I made the text bold. */
+    font-weight: bold;
+
+    /* I set the text's color to a bright yellow color that has the rgb value (250, 246, 0). */
+    color: rgb(250, 246, 0);
+}
