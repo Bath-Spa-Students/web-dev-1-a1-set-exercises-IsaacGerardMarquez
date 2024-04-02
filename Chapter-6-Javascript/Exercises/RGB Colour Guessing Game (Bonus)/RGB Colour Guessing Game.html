@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RGB Colour Guessing Game.css">
+    <title>RGB Colour Guessing Game</title>
+</head>
+<body>
+    <!-- Title of the Game -->
+    <h1>Isaac's <span id="correctColouredbox"></span> Colour Guessing Game</h1>
+
+    <!-- Navigational buttons of the game -->
+    <div id="RGB-BUTTON">
+        <button id="resetBoxcolour">Change Colours</button>
+        <span id="boxColourmessage"></span>
+        <span id="lives">Your remaining lives is: <span id="playerLives">3</span></span>
+        <h2>Choose difficulty level: </h2>
+        <button id="EasyLevel">Easy</button>
+        <button id="MediumLevel">Medium</button>
+        <button id="HardLevel" class="active">Hard</button>
+    </div>
+
+    <!-- The hexagonal boxes -->
+    <div id="hexagonColouredboxcontainer">
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+        <div class="hexagonColouredbox"></div>
+    </div>
+
+    <script src="RGB Colour Guessing Game.js"></script>
+</body>
+</html>
